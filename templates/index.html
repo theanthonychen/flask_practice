@@ -22,4 +22,13 @@
 <h1>Home Page</h1>
 <br>
 <p>Click <a href="/logout">here</a> to logout.</p>
+<br>
+<p>Click <a href="/reset">here</a> to RESET.</p>
+<br><br>
+<h3>Existing Users:</h3>
+{% for user in existing_users %}
+  <strong>Username:</strong> {{ user.username }} <br>
+  <strong>Password:</strong> {{ user.password }} <br>
+<br>
+{% endfor %}
 {% endblock %}
